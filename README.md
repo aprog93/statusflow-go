@@ -4,10 +4,12 @@
 safe error exposure, and stable application error codes.
 
 - **Author:** Alfred Fonher — `aprog93`
-- **Status:** Initial development; the public API is intentionally small and
-  should be reviewed before adopting pre-1.0 releases in production.
+- **Status:** Public release `v0.1.0`; the API is intentionally small and
+  should be reviewed before adopting this pre-1.0 release in production.
 - **Classification:** Go library/module and infrastructure HTTP SDK.
 - **Runtime dependency:** Go standard library only (`net/http`, `encoding/json`).
+
+See the [CHANGELOG](CHANGELOG.md) for release history.
 
 ## What it is—and is not
 
@@ -31,7 +33,7 @@ go get github.com/aprog93/statusflow-go
 Import the package using its module path. The package name is `statusflow`:
 
 ```go
-import "github.com/aprog93/status-flow/golang-ver"
+import "github.com/aprog93/statusflow-go"
 ```
 
 The module currently declares Go 1.22 compatibility. Pin a released module
@@ -163,13 +165,17 @@ Tests cover catalog and language fallbacks, constructors, status validation,
 JSON serialization, cause redaction, `net/http` integration, and end-to-end
 requests through `httptest.NewServer`.
 
-From `golang-ver`, run:
+From the repository root, run:
 
 ```bash
-gofmt -w ./*.go
+test -z "$(gofmt -l .)"
 go vet ./...
 go test ./...
+go test -race ./...
 ```
+
+These same checks run in GitHub Actions for pushes and pull requests using Go
+1.22. The `v0.1.0` release is documented in the [CHANGELOG](CHANGELOG.md).
 
 ## Versioning
 
