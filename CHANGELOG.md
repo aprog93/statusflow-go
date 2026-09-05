@@ -5,6 +5,18 @@ All notable changes to StatusFlow Go are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-09-05
+
+### Added
+
+- Added an executable `net/http` demo for running StatusFlow Go locally.
+- Added integration examples for direct `net/http` usage and external routers.
+
+### Testing
+
+- Added end-to-end coverage using a real `httptest.NewServer` and HTTP client
+  requests against the demo integration paths.
+
 ## [0.1.0] - 2026-09-04
 
 ### Added
@@ -39,4 +51,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   language fallbacks, error redaction, `net/http` integration, and end-to-end
   requests through `httptest.NewServer`.
 
+[0.1.1]: https://github.com/aprog93/statusflow-go/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/aprog93/statusflow-go/releases/tag/v0.1.0

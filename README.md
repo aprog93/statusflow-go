@@ -4,8 +4,9 @@
 safe error exposure, and stable application error codes.
 
 - **Author:** Alfred Fonher — `aprog93`
-- **Status:** Public release `v0.1.0`; the API is intentionally small and
-  should be reviewed before adopting this pre-1.0 release in production.
+- **Status:** Next public release `v0.1.1` (pending tag creation); the API is
+  intentionally small and should be reviewed before adopting this pre-1.0
+  release in production.
 - **Classification:** Go library/module and infrastructure HTTP SDK.
 - **Runtime dependency:** Go standard library only (`net/http`, `encoding/json`).
 
@@ -188,7 +189,7 @@ go test -race ./...
 ```
 
 These same checks run in GitHub Actions for pushes and pull requests using Go
-1.22. The `v0.1.0` release is documented in the [CHANGELOG](CHANGELOG.md).
+1.22. The next `v0.1.1` release is documented in the [CHANGELOG](CHANGELOG.md).
 
 ## Versioning
 
