@@ -11,6 +11,19 @@ safe error exposure, and stable application error codes.
 
 See the [CHANGELOG](CHANGELOG.md) for release history.
 
+## Demo and integration examples
+
+Run the executable demo with the standard library only:
+
+```bash
+go run ./cmd/statusflow-demo
+```
+
+It includes success, safe errors, application error codes, public details, and
+explicit English/Spanish responses. See the [examples guide](examples/README.md)
+for `curl` commands, direct `WriteJSON`/`WriteError` usage, `Adapt`, and
+integration with external routers that accept `http.Handler`.
+
 ## What it is—and is not
 
 StatusFlow Go sits at the boundary between application code and `net/http`. It
