@@ -1,0 +1,22 @@
+# Go build and test artifacts
+bin/
+dist/
+*.test
+*.out
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.log
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local tooling metadata
+.atl/
+.codegraph/
